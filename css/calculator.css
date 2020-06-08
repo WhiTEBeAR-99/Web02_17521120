@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sec-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+}
+
+.button {
+    width: 80px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+    color: #3C528C;
+    border: 1px solid #FFBB70;
+    cursor: pointer;
+}
+
+.textview {
+    width: 350px;
+    height: 50px;
+    margin: 5px;
+}
+
+.button.zero {
+    width: 170px;
+}
+
+.button.big {
+    height: 120px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm Tra Người Dùng</title>
+	<link rel="stylesheet" href="../app.css">
+	<link rel="stylesheet" href="../css/check_user.css">
+	<script type="text/javascript" src="../js/check_user.js" async></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">		
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="../index.html">Main</a></li>
+            <li><a href="../components/Check_User.html">Kiểm tra người dùng</a></li>
+            <li><a href="../components/Clock.html">Đồng hồ kim</a></li>
+            <li><a href="../components/NewYearCountDown.html">New Year Count Down</a></li>
+            <li><a href="../components/Calculator.html">Máy tính</a></li>
+        </ul>
+    </div>
+    <div class="sec-body">
+		<form id="login-form" action="/action_page.php">
+			<h1>Đăng Nhập Tài Khoản</h1>
+			<div id="username">
+				<i class="fa fa-user-o"></i>
+				<input type="text" placeholder="Họ và Tên" id="user" on>
+			</div>
+			<div id="password">
+				<i class="fa fa-key"></i>
+				<input type="password" placeholder="Mật khẩu" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+				<span class="eye" id="eye-icon">
+					<i class="fa fa-eye" id="hide-eye"></i>
+					<i class="fa fa-eye-slash" id="hide-eye-slash"></i>
+				</span>
+			</div>
+			<button type="button" class="login-button" onclick="loginClick()">Đăng nhập</button>
+		</form>
+	</div>
+</body>
+</html>

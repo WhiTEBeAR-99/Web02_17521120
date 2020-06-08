@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng Hồ Kim</title>
+    <link rel="stylesheet" href="../app.css">
+    <link rel="stylesheet" href="../css/clock.css">
+    <script type="text/javascript" src="../js/clock.js" async></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="../index.html">Main</a></li>
+            <li><a href="../components/Check_User.html">Kiểm tra người dùng</a></li>
+            <li><a href="../components/Clock.html">Đồng hồ kim</a></li>
+            <li><a href="../components/NewYearCountDown.html">New Year Count Down</a></li>
+            <li><a href="../components/Calculator.html">Máy tính</a></li>
+        </ul>
+    </div>
+    <div class="sec-body">
+        <div class="clock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+            </div>
+        </div>
+        <!-- <script type="text/javascript">
+            const deg = 6;
+            const hr = document.querySelector("#hr");
+            const mn = document.querySelector("#mn");
+            const sc = document.querySelector("#sc");
+            setInterval(() => {
+                let day = new Date();
+                let hh = day.getHours() * 30;
+                let mm = day.getMinutes() * deg;
+                let ss = day.getSeconds() * deg;
+                hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
+                mn.style.transform = `rotateZ(${mm}deg)`;
+                sc.style.transform = `rotateZ(${ss}deg)`;
+            })
+        </script> -->
+    </div>
+</body>
+
+</html>

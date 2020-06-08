@@ -1,0 +1,48 @@
+* {
+	padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/bg5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: inline-block;
+    width: 100%;
+    background-color: #001431;
+}
+
+.navbar ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.navbar ul li {
+	display: inline;
+	margin-right: 25px;
+}
+
+.navbar ul li a {
+	color: #577994;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px auto;
+	transition: color 0.5s;
+}
+
+.navbar ul li a:hover {
+	color:white;
+}
+
+img.bg {
+    width: 100%;
+    height: 100%;
+}
